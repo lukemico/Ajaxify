@@ -1,0 +1,7 @@
+<h2>All Messages</h2>
+
+<% @all_messages.each do |msg| %>
+  <p>
+    <%= link_to(msg.content, msg "/messages/#{msg.id}")%>
+  </p>
+  <% end %>
